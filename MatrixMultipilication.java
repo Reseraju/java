@@ -49,11 +49,11 @@ public class MatrixMultipilication {
                 System.out.println("Sorry!! Multiplication not possible");
             }
             else{
-                System.out.println("enter the elements of 1st matrix : ");
                 MatrixMultipilication Matrix=new MatrixMultipilication();
                 int [][] a= new int[row1][col1];
                 int [][] b= new int[row2][col2];
                 int [][] c= new int[row1][col2];
+                System.out.println("enter the elements of 1st matrix : ");
                 Matrix.readMatrix(a, row1, col1);
                 System.out.println("the 1st matrix is :\n");
                 Matrix.printMatrix(a, row1, col1);
