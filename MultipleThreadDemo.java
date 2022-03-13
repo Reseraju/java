@@ -5,6 +5,7 @@
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 class Odd extends Thread{
@@ -42,7 +43,7 @@ class Even extends Thread{
 }
 
 public class MultipleThreadDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Odd oddThread =new Odd();
         Even evenThread = new Even();
         //Multiple Thread
