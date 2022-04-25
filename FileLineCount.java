@@ -2,12 +2,13 @@
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FilterReader;
 import java.io.IOException;
 
 
 public class FileLineCount {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         FileLineCount count =new FileLineCount();
         int noOfLines = count.countLine("input.txt");
         System.out.println("no of lines in the given text file :"+noOfLines);
